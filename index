@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site de Bandes Dessinées</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f9f9f9; color: #333; }
+        header { text-align: center; margin-bottom: 40px; }
+        .bd-card { background: #fff; border-radius: 8px; padding: 20px; margin-bottom: 20px; display: flex; gap: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .bd-card img { width: 150px; height: 220px; object-fit: cover; border-radius: 4px; }
+        .bd-info h2 { margin-top: 0; }
+        .btn { display: inline-block; background: #007bff; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; margin-right: 10px; margin-top: 10px; }
+        .btn:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenue sur mon univers de BD</h1>
+        <p>Découvrez et lisez mes bandes dessinées en libre accès.</p>
+    </header>
+
+    <main>
+        <!-- Répétez ce bloc pour chaque BD -->
+        <div class="bd-card">
+            <img src="couverture-tome-1.jpg" alt="Couverture de la BD">
+            <div class="bd-info">
+                <h2>Titre de votre BD - Tome 1</h2>
+                <p>Un court résumé de votre histoire pour donner envie aux lecteurs de plonger dedans...</p>
+                <!-- Bouton pour lire dans le navigateur (ouvre le PDF) -->
+                <a href="bd-tome-1.pdf" target="_blank" class="btn">Lire en ligne</a>
+                <!-- Bouton pour télécharger directement -->
+                <a href="bd-tome-1.pdf" download class="btn">Télécharger (PDF)</a>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
